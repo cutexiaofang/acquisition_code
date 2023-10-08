@@ -1,0 +1,3 @@
+code_rate_shift_sample is to output code which code rate is affected by Dopppler
+DSFH is the function which to generate the DSFH code
+simulation is test ffunction
