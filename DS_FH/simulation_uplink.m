@@ -32,4 +32,3 @@ Fd = rand(1)*SysParameter.Fdmax*2 - SysParameter.Fdmax;
 Tau = floor(1000*rand(1)*FsTc);  
 SigLen = 100*FsTb;
 Sig = DSFH_uplink(SysParameter,Fd,Tau,SigLen);
-
