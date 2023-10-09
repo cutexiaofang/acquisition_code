@@ -37,10 +37,10 @@ PG  = FsTb/FsTc;   %%% #of chips per bit
 
 %%% 0. generate rand info bits
 NumBits = ceil(SigLen/FsTb)+1;   %%% generate 1 more bit of signal for delay
-Bit = sign(rand(1,NumBits)-0.5);   %%%uipolar to bipolar
+Bit = sign(randi(2,1,NumBits)-1.5);   %%%uipolar to bipolar
 
 %%% 1. generate the code sequence
-DsCode = repmat(sign(rand(1,SysParameter.N)-0.5),1,NumBits);
+DsCode = repmat(sign(randi(2,1,SysParameter.N)-1.5),1,NumBits);
 
 
 %%% 2. generate the FH freq. need to acount for Fd for each freq hop freq.
